@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>All Sports</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background-color: rgb(0, 153, 255);
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: black;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: rgb(0, 217, 255);
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: black;
+}
+ .header{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background-color: rgb(0, 162, 255);
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+  .aling{
+      margin-left: 100px;
+      display:flex;
+  }
+}
+.signin{
+  text-align: right;
+}
+.cart{
+  border-radius: 40px;
+  margin-left: 20px;
+}
+.heading{
+  text-align: center;
+  font-size: 3rem;
+  
+}
+</style>
+</head>
+<body>
+    
+<div class="wrapper">
+   
+    <div class="sidebar">
+        <h2><a href="index.html"><img src="active.png" height="100px" width="100px"></a></h2>
+        <ul>
+           
+            <li><a href="racket sports.html"><i class="fas "></i>Racket Sports</a></li>
+            <li><a href="Team Sports.html"><i class="fas "></i>Team Sports</a></li>
+            <li><a href="cycling.html"><i class="fas "></i>Cycling</a></li>
+            
+               </ul> 
+       
+    </div>
+    <div class="main_content">
+       <div class="header "><a href="index.html">Home</a> \ <a href="All sports.html"><u>All Sports</u></a></div>
+       <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+          <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href=""><img src="skateboards.webp" height="350" width="100%" ></a>
+          </div>
+          <div class="carousel-item">
+           <a href=""> <img src="football1.webp" alt="Chicago" height="350" width="100%"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="st30.webp" alt="New York" height="350" width="100%"></a>
+          </div>
+          <div class="carousel-item">
+              <a href=""><img src="kidbascketball.webp" alt="" height="350" width="100%"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="badi.webp" height="350" width="100%"></a>
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div><br>
+      <div class="heading"><u>Top Deals Just For You</u></div>
+      <div class="container">
+      <div class="card">
+        <table>
+          <tr>
+            <td>
+              <img src="artengo.webp" height="400" width="370px">
+            </td>
+            <td>
+              <div class="work">
+              <p class="name">ARTENGO</p>
+              <p class="model">Adult Tennis Racket TR160 Lite - Blue</p>
+              
+              <p class="madefor">
+               MADE FOR
+              </p>
+              <p class="des">Our design team developed this versatile racket for your first tennis training sessions with a club.. The TR160 Lite is a versatile racket that's ideal for learning to play tennis, with an aluminium head for good impact resistance and its graphite core for more comfort on impact.</p>
+              
+             <img src="2year.png" height="120" width="120"><br><br>
+              <p class="mrp"> ₹ 1,999 inclusive of all taxes</p>           
+              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>
+             </div>
+              <br><br>
+            </td>
+          </tr>
+          <tr>
+            <td>    </td>
+          </tr>
+        </table>
+       
+          </div>
+          </div><br><br>
+          <div class="container">
+            <div class="card">
+              <table>
+                <tr>
+                  <td>
+                    <img src="tarmak.webp" height="300" width="300px">
+                  </td>
+                  <td>
+                    <div class="work">
+                    <p class="name">TARMAK</p>
+                    <p class="model">BT500 Grip Adult Size 7 Basketball - Orange Great ball feel</p>
+                    
+                    <p class="madefor">
+                     MADE FOR
+                    </p>
+                    <p class="des">Official size 7 basketball designed for playing outdoors or indoors, for men and boys ages 13 and up.. This size 7 basketball is one of a kind. Its polyurethane cover gives it excellent grip and ball feel.</p>
+                    
+                   <img src="2year.png" height="120" width="120"><br><br>
+                    <p class="mrp"> ₹ 1,499 inclusive of all taxes</p>           
+                    <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>
+                   </div>
+                    <br><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>    </td>
+                </tr>
+              </table>
+             
+                </div>
+                </div>
+      </div>
+      
+</body>
+</html>

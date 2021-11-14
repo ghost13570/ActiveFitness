@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Team Sports</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background-color: rgb(0, 153, 255);
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: black;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: rgb(0, 217, 255);
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: black;
+}
+ .header{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background-color: rgb(0, 162, 255);
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+  .aling{
+      margin-left: 100px;
+      display:flex;
+  }
+}
+.signin{
+  text-align: right;
+}
+.cart{
+  border-radius: 40px;
+  margin-left: 20px;
+}
+
+.aling{
+          margin-left: 100px;
+          display:flex;
+      }
+    
+    .image{
+
+        margin-top: 50px;
+    }
+
+    .card{
+        background-color: white;
+        margin-left: 100px;
+        width: 85%;
+    }
+    table{
+      margin-top: 5px;
+    }
+    .name{
+      font-weight: lighter;
+      font-size: 20px;
+    }
+    .model{
+      font-weight: bold;
+      font-size: 23px;
+    }
+    .mrp{
+      font-size: 20px;
+      font-weight: bold ;
+      background-color: yellow;
+      width: 250px;
+    }
+    .madefor{
+      font-size: 15px;
+    }
+    .des{
+      font-size: 15px;
+    }
+    td{
+      margin-left: 10px;
+    }
+    .work{
+      margin-left: 20px;
+    }
+    .heading{
+      font-size: 3rem;
+      text-align: center;
+    }
+    a{
+      color: blue;
+    }
+    a:hover{
+      color: blue;
+    }
+</style>
+</head>
+<body>
+    
+<div class="wrapper">
+   
+    <div class="sidebar">
+        <h2><a href="index.html"><img src="active.png" height="100px" width="100px"></a></h2>
+        <ul>
+            
+            <li><a href="racket sports.html"><i class="fas "></i>Racket Sports</a></li>
+            <li><a href="Team Sports.html"><i class="fas "></i><b>Team Sports</b></a></li>
+            <li><a href="cycling.html"><i class="fas "></i>Cycling</a></li>
+            
+               </ul> 
+       
+    </div>
+    <div class="main_content">
+       <div class="header "><a href="index.html">Home</a> \ <a href="All sports.html">All Sports</a> \ <a href="Team Sports.html">Team Sports</a></div>
+       <div class="header"><center><a href="#football">Football</a> | <a href="#bascketball">basketball</a> | 
+        <a href="#volleyball">Volleyball</a> | <a href="#hockey">Hockey</a></center></div>
+       <!--football starts-->
+       <div id="football">
+       <div class="heading" >Football</div>                                              
+       <div class="card">                                              
+        <table>                                              
+          <tr>                                              
+            <td>                                              
+              <img src="footballshoes.webp" height="400" width="350px">                                              
+            </td>                                              
+           <td>                
+              <div class="work">                                              
+              <p class="name">KIPSTA</p>       
+              <p class="model">Adult Firm Ground Football Boots Agility 900 Mesh MiD - Blue</p>                                              
+              
+              <p class="madefor">
+               MADE FOR
+              </p>
+              <p class="des">Our football product design team has created these comfortable Agility 900 Mesh MiD FG boots for playing on dry pitches over 3 times a week.. Looking for versatile boots to play on both grass and artificial dry pitches? With an easy-to-pull-on liner, the Agility 900 MiD provides comfort, support, and ball control.</p>
+              
+             <img src="2year.png" height="120" width="120"><br><br>
+              <p class="mrp"> ₹3,999 inclusive of all taxes</p>           
+              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+              <br><br>
+            </td>
+          </tr>
+          <tr>
+            <td>    </td>
+          </tr>
+        </table>
+       
+          </div><br><br>
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img src="ballfootball.webp" height="400" width="350px">
+                </td>
+                <td>
+                  <div class="work">
+                  <p class="name">KIPSTA</p>
+                  <p class="model">Football Ball Size 5 F550 - White</p>
+                  
+                  <p class="madefor">
+                   MADE FOR
+                  </p>
+                  <p class="des">The F550 hybrid has been approved by FIFA for your training sessions and matches. We've designed it to give the perfect balance between durability and feel. Need a ball for your football club? This FIFA Basic F550 ball boasts a thicker outer material paired with a 24-panel design for better stability.</p>
+                  
+                 <img src="2year.png" height="120" width="120"><br><br>
+                  <p class="mrp"> ₹999 inclusive of all taxes</p>           
+                  <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                  <br><br>
+                </td>
+              </tr>
+              <tr>
+                <td>    </td>
+              </tr>
+            </table>
+           
+              </div><br><br>
+              <div class="card">
+                <table>
+                  <tr>
+                    <td>
+                      <img src="goalgloves.webp" height="400" width="350px">
+                    </td>
+                    <td>
+                      <div class="work">
+                      <p class="name">KIPSTA</p>
+                      <p class="model">Adult Football Goalkeeper Gloves F100 Resist - Black/Grey</p>
+                      
+                      <p class="madefor">
+                       MADE FOR
+                      </p>
+                      <p class="des">Our designers, who are also football players, designed these gloves for goalkeepers learning to dive and catch the ball.. Are you looking for durable goalkeeping gloves? We've developed the F100 RESIST glove with a real latex coating for better grip and resistance when catching the ball.</p>
+                      
+                     <img src="2year.png" height="120" width="120"><br><br>
+                      <p class="mrp"> ₹999 inclusive of all taxes</p>           
+                      <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                      <br><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>    </td>
+                  </tr>
+                </table>
+               
+                  </div>
+            </div><!-- Tennis Ends--><br><br>
+            <!--Badminton starts-->
+            <div id="basketball">
+       <div class="heading" >Basketball</div>
+       <div class="card">
+        <table>
+          <tr>
+            <td>
+              <img src="basketball.webp" height="400" width="350px">
+            </td>
+            <td>
+              <div class="work">
+              <p class="name">TARMAK</p>
+              <p class="model">Size 7 Basketball BT100 for Men Ages 13 and Up - Orange</p>
+              
+              <p class="madefor">
+               MADE FOR
+              </p>
+              <p class="des"> Size 7 basketball suitable for boys older than 13 and men playing basketball indoors or outdoors in accordance with FIBA rules.. This is an official size 7 basketball.With an outer cover made from foam PVC, it is durable and offers good ball feel.</p>
+              
+             <img src="2year.png" height="120" width="120"><br><br>
+              <p class="mrp"> ₹699 inclusive of all taxes</p>           
+              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+              <br><br>
+            </td>
+          </tr>
+          <tr>
+            <td>    </td>
+          </tr>
+        </table>
+       
+          </div><br><br>
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img src="basketballshoes.webp" height="400" width="350px">
+                </td>
+                <td>
+                  <div class="work">
+                  <p class="name">TARMAK</p>
+                  <p class="model">Basketball Shoes Men/Women High Ankle Protect 100 - Black
+                </p>
+                  
+                  <p class="madefor">
+                   MADE FOR
+                  </p>
+                  <p class="des">These shoes have been designed for beginner players wanting to get off to a safe start in basketball.. These high-rise basketball shoes have a rubber sole for a great grip and good resistance to abrasion during indoor and outdoor play.</p>
+                  
+                 <img src="2year.png" height="120" width="120"><br><br>
+                  <p class="mrp"> ₹1,499 inclusive of all taxes</p>           
+                  <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                  <br><br>
+                </td>
+              </tr>
+              <tr>
+                <td>    </td>
+              </tr>
+            </table>
+           
+              </div><br><br>
+              <div class="card">
+                <table>
+                  <tr>
+                    <td>
+                      <img src="basket.webp" height="400" width="350px">
+                    </td>
+                    <td>
+                      <div class="work">
+                      <p class="name">TARMAK</p>
+                      <p class="model">Basketball Backboard - Standing B100 Easy - Tool-free adjustment.</p>
+                      
+                      <p class="madefor">
+                       MADE FOR
+                      </p>
+                      <p class="des">Suitable for kids and adults playing basketball outdoors. Adjusts tool-free to 5 heights ranging from 2.20m to 3.05m and can easily be moved thanks to wheels.. This basket and stand are unique. It adjusts to 5 playing heights tool-free. There are two wheels on the front of the base for moving it.</p>
+                      
+                     <img src="2year.png" height="120" width="120"><br><br>
+                      <p class="mrp"> ₹9,999 inclusive of all taxes</p>           
+                      <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button></div>
+                      <br><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>    </td>
+                  </tr>
+                </table>
+               
+                  </div>
+            </div><br><br>
+            <!--baminton ends-->
+            <!--tt starts-->
+            <div id="volleyball">
+              <div class="heading" >Volleyball</div>
+              <div class="card">
+               <table>
+                 <tr>
+                   <td>
+                     <img src="volley1.webp" height="400" width="350px">
+                   </td>
+                   <td>
+                     <div class="work">
+                     <p class="name">ALLSIX</p>
+                     <p class="model">V500 Volleyball - White/Blue/Red</p>
+                     
+                     <p class="madefor">
+                      MADE FOR
+                     </p>
+                     <p class="des">Are you an intermediate player who has mastered most technical skills? This volleyball was designed for you!. Our engineers and designers have created this volleyball based on the FIVB's official rules. Improve your passes and bumps with this volleyball!</p>
+                     
+                    <img src="2year.png" height="120" width="120"><br><br>
+                     <p class="mrp"> ₹999 inclusive of all taxes</p>           
+                     <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                     <br><br>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>    </td>
+                 </tr>
+               </table>
+              
+                 </div><br><br>
+                 <div class="card">
+                   <table>
+                     <tr>
+                       <td>
+                         <img src="volley2.webp" height="400" width="350px">
+                       </td>
+                       <td>
+                         <div class="work">
+                         <p class="name">TARMAK</p>
+                         <p class="model">Men's/Women's Right/Left Knee Brace Prevent 500 - Blue/Orange</p>
+                         
+                         <p class="madefor">
+                          MADE FOR
+                         </p>
+                         <p class="des">Prevent 500 knee brace designed to support players' knees with uniform joint compression.. This knee brace has a comfortable knit that wicks perspiration away. It has non-slip silicone and ribbing that lets your play your sport with peace of mind.</p>
+                         
+                        <img src="2year.png" height="120" width="120"><br><br>
+                         <p class="mrp"> ₹499 inclusive of all taxes</p>           
+                         <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                         <br><br>
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>    </td>
+                     </tr>
+                   </table>
+                  
+                     </div><br><br>
+                     
+                   </div>
+                   <!--tt ends--><br><br>
+                   <div id="hockey">
+                    <div class="heading" >Hockey</div>
+                    <div class="card">
+                     <table>
+                       <tr>
+                         <td>
+                           <img src="hockeybat.webp" height="400" width="350px">
+                         </td>
+                         <td>
+                           <div class="work">
+                           <p class="name">KOROK</p>
+                           <p class="model">Hockey stick- Adults- Fiberglass- FH110- Blue</p>
+                           
+                           <p class="madefor">
+                            MADE FOR
+                           </p>
+                           <p class="des"> 
+                            Designed for adults learning to play field hockey who need control and a little power (100% fibreglass). Korok adult field hockey stick is perfect for beginning hockey
+                           </p>
+                           
+                          <img src="2year.png" height="120" width="120"><br><br>
+                           <p class="mrp"> ₹1,599 inclusive of all taxes</p>           
+                           <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                           <br><br>
+                         </td>
+                       </tr>
+                       <tr>
+                         <td>    </td>
+                       </tr>
+                     </table>
+                    
+                       </div><br><br>
+                       <div class="card">
+                         <table>
+                           <tr>
+                             <td>
+                               <img src="hockeyball.webp" height="400" width="350px">
+                             </td>
+                             <td>
+                               <div class="work">
+                               <p class="name">KOROK</p>
+                               <p class="model">Hockey Ball</p>
+                               
+                               <p class="madefor">
+                                MADE FOR
+                               </p>
+                               <p class="des">Training for adults & Kids. Ideal for training.</p>
+                               
+                              <img src="2year.png" height="120" width="120"><br><br>
+                               <p class="mrp"> ₹89 inclusive of all taxes</p>           
+                               <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                               <br><br>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td>    </td>
+                           </tr>
+                         </table>
+                        
+                           </div><br><br>
+                           <div class="card">
+                             <table>
+                               <tr>
+                                 <td>
+                                   <img src="mouthgaurd.webp" height="400" width="350px">
+                                 </td>
+                                 <td>
+                                   <div class="work">
+                                   <p class="name">KOROK</p>
+                                   <p class="model">Hockey Mouth Guard - Adult - FH100</p>
+                                   
+                                   <p class="madefor">
+                                    MADE FOR
+                                   </p>
+                                   <p class="des">Designed for adults (size L) playing field hockey at low intensity, it is suitable for beginners. Protects the teeth and part of the gums. Heat-mouldable to fit firmly in place</p>
+                                   
+                                  <img src="2year.png" height="120" width="120"><br><br>
+                                   <p class="mrp"> ₹249 inclusive of all taxes</p>           
+                                   <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                                   <br><br>
+                                 </td>
+                               </tr>
+                               <tr>
+                                 <td>    </td>
+                               </tr>
+                             </table>
+                            
+                               </div>
+                         </div>
+                         <br><br>
+      </div>
+      
+</body>
+</html>

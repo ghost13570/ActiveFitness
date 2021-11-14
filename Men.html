@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Men</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background-color: rgb(0, 153, 255);
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: black;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: rgb(0, 217, 255);
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: black;
+}
+ .header{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background-color: rgb(0, 162, 255);
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+  .aling{
+      margin-left: 100px;
+      display:flex;
+  }
+}
+.signin{
+  text-align: right;
+}
+.cart{
+  border-radius: 40px;
+  margin-left: 20px;
+}
+
+.aling{
+          margin-left: 100px;
+          display:flex;
+      }
+    
+    .image{
+
+        margin-top: 50px;
+    }
+
+    .card{
+        background-color: white;
+        margin-left: 100px;
+        width: 85%;
+    }
+    table{
+      margin-top: 5px;
+    }
+    .name{
+      font-weight: lighter;
+      font-size: 20px;
+    }
+    .model{
+      font-weight: bold;
+      font-size: 23px;
+    }
+    .mrp{
+      font-size: 20px;
+      font-weight: bold ;
+      background-color: yellow;
+      width: 250px;
+    }
+    .madefor{
+      font-size: 15px;
+    }
+    .des{
+      font-size: 15px;
+    }
+    td{
+      margin-left: 10px;
+    }
+    .work{
+      margin-left: 20px;
+    }
+    .heading{
+      font-size: 3rem;
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+    
+<div class="wrapper">
+   
+    <div class="sidebar">
+        <h2><img src="active.png" height="100px" width="100px"></h2>
+        <ul>
+          
+            <li><a href="All sports.html"><i class="fas "></i>All Sports</a></li>
+            <li><a href="Men.html"><i class="fas "></i><b>Men</b></a></li>
+            <li><a href="Women.html"><i class="fas "></i>Women</a></li>
+            <li><a href="Sports Accessories.html"><i class="fas "></i>Sports Accesssories</a></li>
+            <li><a href="Gym Equipment.html"><i class="fas "></i>Gym Equipment</a></li>
+               </ul> 
+       
+    </div>
+    <div class="main_content">
+       <div class="header "><A href="index.html">Home</A> \ <a href="Men.html">Men</a></div>
+        <div class="header"><center><a href="#footwear">Men's Footwear</a> | <a href="#tops">Men's Tops</a> | <a href="#bottoms">Men's Bottoms</a></center></div>
+        <div id="footwear">
+            <div class="heading">Men's Footwear</div>
+            <div class="card">
+                <table>
+                  <tr>
+                    <td>
+                      <img src="mensandal.webp" height="400" width="350px">
+                    </td>
+                    <td>
+                      <div class="work">
+                      <p class="name">QUECHUA</p>
+                      <p class="model">Hiking sandals - NH100 - Men's</p>
+                      
+                      <p class="madefor">
+                       MADE FOR
+                      </p>
+                      <p class="des">
+                       Our hiking designers have developed these NH100 sandals for you to wear in hot and dry weather on occasional walks in the countryside.. Our motivation? To offer you comfortable and lightweight sandals that you can wear on summer walks on easy trails along fairly flat terrain. All at an affordable price!
+                      </p>
+                      
+                     <img src="2year.png" height="120" width="120"><br><br>
+                      <p class="mrp"> ₹999 inclusive of all taxes</p>           
+                      <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                      <br><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>    </td>
+                  </tr>
+                </table>
+               
+                  </div><br><br>
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <img src="manshoes.webp" height="400" width="350px">
+                        </td>
+                        <td>
+                          <div class="work">
+                          <p class="name">KALENJI</p>
+                          <p class="model">MEN'S RUNNING SHOES RUN SUPPORT - DARK BLUE</p>
+                          
+                          <p class="madefor">
+                           MADE FOR
+                          </p>
+                          <p class="des">
+                            Our design teams developed these men's running shoes that guarantee cushioning and support for running up to 10km per week.. Are you a regular runner looking for cushioning and support in your running shoes? Choose RUN SUPPORT for running pleasure!
+                          </p>
+                          
+                         <img src="2year.png" height="120" width="120"><br><br>
+                          <p class="mrp"> ₹2,499 inclusive of all taxes</p>           
+                          <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                          <br><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>    </td>
+                      </tr>
+                    </table>
+                   
+                      </div><br><br>
+                      <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="flip.webp" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">OLAIAN</p>
+                              <p class="model">Men's Sandals Slap 590 - Black</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                                Our surfer design teams have developed these sandals for people practising water sports “before and after their sessions”. Suitable for everyone!. These sandals are very comfortable, with an adjustable velcro upper that adapts to your foot and a sole that provides a good balance between cushioning and durability.
+                              </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹799 inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>    </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div>
+                
+        </div><br><br>
+        <div id="tops">
+            <div class="heading">Men's Tops</div>
+            <div class="card">
+                <table>
+                  <tr>
+                    <td>
+                      <img src="mentshirt.webp" height="400" width="350px">
+                    </td>
+                    <td>
+                      <div class="work">
+                      <p class="name">QUECHUA</p>
+                      <p class="model">Men's Hiking Recycled Synthetic Short-Sleeved T-Shirt MH100</p>
+                      
+                      <p class="madefor">
+                       MADE FOR
+                      </p>
+                      <p class="des">
+                        At the foot of Mont Blanc, our team of enthusiasts designed this environmentally friendly, moisture wicking t-shirt for occasional mountain walking. It is made from recycled polyester making it more environmentally-friendly The perfect T-shirt for your first mountain hikes!
+                      </p>
+                      
+                     <img src="2year.png" height="120" width="120"><br><br>
+                      <p class="mrp"> ₹399 inclusive of all taxes</p>           
+                      <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>   </div>
+                      <br><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>    </td>
+                  </tr>
+                </table>
+               
+                  </div>
+                  <br><br>
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <img src="shirt.webp" height="400" width="350px">
+                        </td>
+                        <td>
+                          <div class="work">
+                          <p class="name">FORCLAZ</p>
+                          <p class="model">Men's Full Sleeve Travel Shirt TRAVEL 100 WARM - Green</p>
+                          
+                          <p class="madefor">
+                           MADE FOR
+                          </p>
+                          <p class="des">
+                           Our backpack designers created this flannel shirt for going anywhere in the world in comfort with complete peace of mind.. It is strong and practical, an ideal solution for winter and summer alike, for trips into town and outdoor adventures!
+                          </p>
+                          
+                         <img src="2year.png" height="120" width="120"><br><br>
+                          <p class="mrp"> ₹599 inclusive of all taxes</p>           
+                          <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>   </div>
+                          <br><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>    </td>
+                      </tr>
+                    </table>
+                   
+                      </div>
+                      <br><br>
+                      <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="raincoatmen.webp" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">QUECHUA</p>
+                              <p class="model">Men’s Country Walking Raincoat - NH100 Raincut Demi Zip</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                               Our hiking designers have developed this NH100 Half-zip rain jacket for occasional walks in the forest or on the coast. A back-up solution in case of rain. Our best price for a waterproof hiking jacket! This light, compact, waterproof and breathable technical jacket provides excellent back-up protection and can be stored in your pocket.
+                              </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹ inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>    </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div>
+                    <br><br>
+                    <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="pullovermen.png" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">QUECHUA</p>
+                              <p class="model">Men’s Hiking Fleece Jacket - MH120</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                               At the foot of the Mont-Blanc, our team eco-designed this low-cost warm and breathable fleece jacket for occasional hiking in the mountains.. A fleece jacket that is more respectful of the planet, made from recycled polyester. It is warm and comfortable, and will protect you from the cold in the mountains. A staple in your backpack!
+                              </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹799 inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>   </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div>
+                    <br><br>
+                    <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="jacketmen'.webp" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">WEDZE</p>
+                              <p class="model">MEN’S WINTER SKI JACKET 100 BLACK</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                               Our team, concerned for the environment, designed this jacket for the skier looking for essential protection against bad weather.. Our jacket reflects innovative design, both in terms of the chosen components as well as its shape, that is warm and waterproof so you can enjoy your ski days to the full.
+                              </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹ inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>   </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div>
+                    
+        </div>
+        <div id="bottoms">
+          <div class="heading">Men's Bottoms</div>
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img src="menbottom.webp" height="400" width="350px">
+                </td>
+                <td>
+                  <div class="work">
+                  <p class="name">ARTENGO</p>
+                  <p class="model">Tennis Shorts Dry TSH 100 - Black</p>
+                  
+                  <p class="madefor">
+                   MADE FOR
+                  </p>
+                  <p class="des">
+                   Our design teams created these shorts for learning to play racket sports without feeling too hot. It is an above knee length shorts.. You'll feel at ease on the court with these tennis shorts. They are lightweight with good freedom of movement for total comfort during play. The large pockets can hold balls without getting in the way
+                  </p>
+                  
+                 <img src="2year.png" height="120" width="120"><br><br>
+                  <p class="mrp"> ₹299 inclusive of all taxes</p>           
+                  <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>    </div>
+                  <br><br>
+                </td>
+              </tr>
+              <tr>
+                <td>    </td>
+              </tr>
+            </table>
+           
+              </div><br><br>
+              <div class="card">
+                <table>
+                  <tr>
+                    <td>
+                      <img src="menbottom2.webp" height="400" width="350px">
+                    </td>
+                    <td>
+                      <div class="work">
+                      <p class="name">DOMYOS</p>
+                      <p class="model">Men Polyester Slim-Fit Gym Track Pants - Black</p>
+                      
+                      <p class="madefor">
+                       MADE FOR
+                      </p>
+                      <p class="des">
+                       Looking for bottoms to work out in once in a while, or for everyday wear? This model is just for you. Excellent value for money!. Want to do fitness activities and be able to wear sporty bottoms every day? Who can stop you? With the durable woven fabric and loose fit, this is the perfect model for you.
+                      </p>
+                      
+                     <img src="2year.png" height="120" width="120"><br><br>
+                      <p class="mrp"> ₹699 inclusive of all taxes</p>           
+                      <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                      <br><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>    </td>
+                  </tr>
+                </table>
+               
+                  </div><br>
+
+                  <br>
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <img src="menbottom3.webp" height="400" width="350px">
+                        </td>
+                        <td>
+                          <div class="work">
+                          <p class="name">FORCLAZ</p>
+                          <p class="model">Men's Travel Trekking Cargo Trousers - TRAVEL 100 Brown</p>
+                          
+                          <p class="madefor">
+                           MADE FOR
+                          </p>
+                          <p class="des">
+                           A pair of trekking trousers designed by our backpacker designers to allow you to travel the world with peace of mind in any environment.. Equipped with numerous pockets, including three secure ones, these adjustable and resistant "cargo pants" are the perfect ally to see the action and discover the world's regions.
+                          </p>
+                          
+                         <img src="2year.png" height="120" width="120"><br><br>
+                          <p class="mrp"> ₹1,799 inclusive of all taxes</p>           
+                          <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                          <br><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>    </td>
+                      </tr>
+                    </table>
+                   
+                      </div><br><br>
+                      <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="menbottom4.webp" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">NABAIJI</p>
+                              <p class="model">Men swimming boxer shorts - black</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                               Our design teams have developed these swimming shorts for men wanting to get into swimming.. Don’t know if you’ll like swimming, if the water is your element? These low-price swim shorts are perfect for a first try at swimming or for occasional use.
+                              </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹699 inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>   </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div>
+        </div>
+    </div>
+      
+</body>
+</html>
