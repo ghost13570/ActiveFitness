@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Women</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background-color: rgb(0, 153, 255);
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: black;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: rgb(0, 217, 255);
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: black;
+}
+ .header{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background-color: rgb(0, 162, 255);
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+  .aling{
+      margin-left: 100px;
+      display:flex;
+  }
+}
+.signin{
+  text-align: right;
+}
+.cart{
+  border-radius: 40px;
+  margin-left: 20px;
+}
+
+.aling{
+          margin-left: 100px;
+          display:flex;
+      }
+    
+    .image{
+
+        margin-top: 50px;
+    }
+
+    .card{
+        background-color: white;
+        margin-left: 100px;
+        width: 85%;
+    }
+    table{
+      margin-top: 5px;
+    }
+    .name{
+      font-weight: lighter;
+      font-size: 20px;
+    }
+    .model{
+      font-weight: bold;
+      font-size: 23px;
+    }
+    .mrp{
+      font-size: 20px;
+      font-weight: bold ;
+      background-color: yellow;
+      width: 250px;
+    }
+    .madefor{
+      font-size: 15px;
+    }
+    .des{
+      font-size: 15px;
+    }
+    td{
+      margin-left: 10px;
+    }
+    .work{
+      margin-left: 20px;
+    }
+    .heading{
+      font-size: 3rem;
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+    
+<div class="wrapper">
+   
+    <div class="sidebar">
+        <h2><img src="active.png" height="100px" width="100px"></h2>
+        <ul>
+          
+            <li><a href="All sports.html"><i class="fas "></i>All Sports</a></li>
+            <li><a href="Men.html"><i class="fas "></i>Men</a></li>
+            <li><a href="Women.html"><i class="fas "></i><b>Women</b></a></li>
+            <li><a href="Sports Accessories.html"><i class="fas "></i>Sports Accesssories</a></li>
+            <li><a href="Gym Equipment.html"><i class="fas "></i>Gym Equipment</a></li>
+               </ul> 
+       
+    </div>
+    <div class="main_content">
+       <div class="header "><A href="index.html">Home</A> \ <a href="Women.html">Women</a></div>
+        <div class="header"><center><a href="#footwear">Women's Footwear</a> | <a href="#tops">Women's Tops</a> | <a href="#bottoms">Women's Bottoms</a></center></div>
+        <div id="footwear">
+            <div class="heading">Women's Footwear</div>
+            <div class="card">
+                <table>
+                  <tr>
+                    <td>
+                      <img src="womenshoes1.webp" height="400" width="350px">
+                    </td>
+                    <td>
+                      <div class="work">
+                      <p class="name">KALENJI</p>
+                      <p class="model">KALENJI RUN SUPPORT WOMEN'S RUNNING SHOES - KHAKI</p>
+                      
+                      <p class="madefor">
+                       MADE FOR
+                      </p>
+                      <p class="des">
+                       Our design teams developed these supportive women's shoes with cushioning for running up to 10km per week.. With cushioning and special laces for support, these women's running shoes are safe and comfortable on the road and trails.
+                        </p>
+                      
+                     <img src="2year.png" height="120" width="120"><br><br>
+                      <p class="mrp"> ₹1,499 inclusive of all taxes</p>           
+                      <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                      <br><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>    </td>
+                  </tr>
+                </table>
+               
+                  </div><br><br>
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <img src="womenshoes2.webp" height="400" width="350px">
+                        </td>
+                        <td>
+                          <div class="work">
+                          <p class="name">QUECHUA></p>
+                          <p class="model"></p>
+                          
+                          <p class="madefor">
+                           MADE FOR
+                          </p>
+                          <p class="des">
+                           Our hiking designers have developed these NH110 sandals for you to wear in hot and dry weather on occasional walks in the countryside.. Our motivation? To offer you comfortable sandals with good grip, that you can wear on summer walks along country trails, and even when crossing streams.
+                                   </p>
+                          
+                         <img src="2year.png" height="120" width="120"><br><br>
+                          <p class="mrp"> ₹1,299 inclusive of all taxes</p>           
+                          <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button></div>
+                          <br><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>    </td>
+                      </tr>
+                    </table>
+                   
+                      </div><br><br>
+                      <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="womenshoes3.webp" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">
+                                
+                                OLAIAN</p>
+                              <p class="model">Women's Flip-Flops 100 - Turquoise Black</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                                Our surfer design teams have developed these Flip-Flops for enthusiasts of water sports “before and after their sessions”. Suitable for everyone!. These simple and practical flip-flops are easy to slip on and take off and are very quick-drying. Perfect for before and after water sports.
+                                 </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹249 inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div>
+                
+        </div><br><br>
+        <div id="tops">
+            <div class="heading">Women's Tops</div>
+            <div class="card">
+                <table>
+                  <tr>
+                    <td>
+                      <img src="womentshirt.webp" height="400" width="350px">
+                    </td>
+                    <td>
+                      <div class="work">
+                      <p class="name">NYAMBA</p>
+                      <p class="model">Women's Cotton Gym T-shirt Regular fit Boat neck 510 - Purple</p>
+                      
+                      <p class="madefor">
+                       MADE FOR
+                      </p>
+                      <p class="des">
+                       Our stylist has combined high-fashion and sportswear with this boat neck T-shirt, designed to be worn to the gym or out and about!. With its soft, draping fabric that keeps you dry and unique neckline that makes all the difference, this shirt would look perfect on you!
+                              </p>
+                      
+                     <img src="2year.png" height="120" width="120"><br><br>
+                      <p class="mrp"> ₹499 inclusive of all taxes</p>           
+                      <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                      <br><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>    </td>
+                  </tr>
+                </table>
+               
+                  </div>
+                  <br><br>
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <img src="womenjacket.webp" height="400" width="350px">
+                        </td>
+                        <td>
+                          <div class="work">
+                          <p class="name">DOMYOS</p>
+                          <p class="model">Women Polyester Loose-Fit Trendy Hooded Gym Jacket - Color Block</p>
+                          
+                          <p class="madefor">
+                           MADE FOR
+                          </p>
+                          <p class="des">
+                            With a good value-for-money, this hooded jacket and its technical details is perfect for training and is sure to catch your eye.. With light stretchy fabric, a drawstring for a cinched or loose look, a zip fastening, a hood, pockets, and thumb loops, you couldn't hope for a more stylish jacket!
+                              </p>
+                          
+                         <img src="2year.png" height="120" width="120"><br><br>
+                          <p class="mrp"> ₹1,699 inclusive of all taxes</p>           
+                          <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                          <br><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>    </td>
+                      </tr>
+                    </table>
+                   
+                      </div>
+                      <br><br>
+                      <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="WOMENSHIRT.webp" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">FORCLAZ</p>
+                              <p class="model">Women's Trekking Shirt Travel 100 - Black Check</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                                Our enthusiastic backpacking designers developed this shirt for you to travel the world with confidence.. Traditional check shirt to put on over a T-shirt in cool temperatures. Its 2 hidden pockets can be used to hide your money or your passport.
+                                   </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹999 inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div>
+                    <br><br>
+                    <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="womenpullover.webp" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">NYAMBA</p>
+                              <p class="model">Women's Cotton French Terry Gym Sweater 100 - Red Print</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                               This is the ideal basic sweatshirt - it's simple and comfy, making it perfect for sports or everyday wear.. A very simple cut, a round neck, very soft… One thing's for sure: you won't want to take this sweatshirt off!
+                                     </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹ inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div>
+                    <br><br>
+                    <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="womenswimsuit.webp" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">NABAIJI</p>
+                              <p class="model">Women's one-piece Una swimsuit - blue</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                               Our design teams developed this one-piece swimsuit for women who are learning to swim and want to enjoy the benefits of water in feminine style.. Want to swim in style? Swimsuit with small short sleeves, a skirt and an inner bra that combines the sporty and feminine styles.
+                                  </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹1,299 inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div>
+                    
+        </div>
+        <div id="bottoms">
+          <div class="heading">Women's Bottoms</div>
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img src="womenlegging.webp" height="400" width="350px">
+                </td>
+                <td>
+                  <div class="work">
+                  <p class="name">DOMYOS</p>
+                  <p class="model">Women Polyester Gym Leggings with Zip Pocket - Black/Pink</p>
+                  
+                  <p class="madefor">
+                   MADE FOR
+                  </p>
+                  <p class="des">
+                    
+                    Offering excellent value for money, these leggings feature an elasticated waistband and contemporary prints to give you an ultra-stylish sports look.. Modern prints, close-fitting, breathable fabric, a zipped pocket, and a stylish elasticated waistband: these leggings have it all!
+                       </p>
+                  
+                 <img src="2year.png" height="120" width="120"><br><br>
+                  <p class="mrp"> ₹699 inclusive of all taxes</p>           
+                  <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                  <br><br>
+                </td>
+              </tr>
+              <tr>
+                <td>    </td>
+              </tr>
+            </table>
+           
+              </div><br><br>
+              <div class="card">
+                <table>
+                  <tr>
+                    <td>
+                      <img src="womenshorts.webp" height="400" width="350px">
+                    </td>
+                    <td>
+                      <div class="work">
+                      <p class="name">NYAMBA</p>
+                      <p class="model">Women's Organic Cotton Gym Short 520 - Pink</p>
+                      
+                      <p class="madefor">
+                       MADE FOR
+                      </p>
+                      <p class="des">
+                        
+                        Want to brighten up your wardrobe? You'll love these pretty shorts with their stylish sporty design.. Fun and trendy colours. Plus, these shorts are made from organic cotton. What more could you want?!
+                         </p>
+                      
+                     <img src="2year.png" height="120" width="120"><br><br>
+                      <p class="mrp"> ₹499 inclusive of all taxes</p>           
+                      <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                      <br><br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>    </td>
+                  </tr>
+                </table>
+               
+                  </div><br>
+
+                  <br>
+                  <div class="card">
+                    <table>
+                      <tr>
+                        <td>
+                          <img src="womentrackpants.webp" height="400" width="350px">
+                        </td>
+                        <td>
+                          <div class="work">
+                          <p class="name">KALENJI</p>
+                          <p class="model">RUNNING TRACK PANTS - BLACK</p>
+                          
+                          <p class="madefor">
+                           MADE FOR
+                          </p>
+                          <p class="des">
+                            
+                            Our team has designed lightweight, breathable, fluid trousers. Perfect for running wherever you like!. These running trousers will win you over with their breathable fabric, quick drying and transpiration wicking capacity. Ideal for your jogging sessions.
+                             </p>
+                          
+                         <img src="2year.png" height="120" width="120"><br><br>
+                          <p class="mrp"> ₹999 inclusive of all taxes</p>           
+                          <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button>  </div>
+                          <br><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>    </td>
+                      </tr>
+                    </table>
+                   
+                      </div><br><br>
+                      <div class="card">
+                        <table>
+                          <tr>
+                            <td>
+                              <img src="womentruser.webp" height="400" width="350px">
+                            </td>
+                            <td>
+                              <div class="work">
+                              <p class="name">FORCLAZ</p>
+                              <p class="model">Women's Travel Trekking Trousers - TRAVEL 100 Khaki</p>
+                              
+                              <p class="madefor">
+                               MADE FOR
+                              </p>
+                              <p class="des">
+                               
+                                Our backpacking engineers developed these trousers to give you total peace of mind during your travels. Traditional cotton-based cargo trousers. They will provide the durability you need for travelling and the comfort of the natural touch.
+                               </p>
+                              
+                             <img src="2year.png" height="120" width="120"><br><br>
+                              <p class="mrp"> ₹1,299 inclusive of all taxes</p>           
+                              <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                              <br><br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>    </td>
+                          </tr>
+                        </table>
+                       
+                          </div><br><br>
+                          <div class="card">
+                            <table>
+                              <tr>
+                                <td>
+                                  <img src="girlskirt.webp" height="400" width="350px">
+                                </td>
+                                <td>
+                                  <div class="work">
+                                  <p class="name">PERFLY</p>
+                                  <p class="model">SKIRT 560 W NAVY PINK
+                                </p>
+                                  
+                                  <p class="madefor">
+                                   MADE FOR
+                                  </p>
+                                  <p class="des">
+                                   
+                                    The intermediate players who are looking for a technical skirt for her regular practice and game.. These technical skirts are made with lightweight breathable fabric to guarantee freedom of movement. Combine it with a T-shirt for panoply.
+                                   </p>
+                                  
+                                 <img src="2year.png" height="120" width="120"><br><br>
+                                  <p class="mrp"> ₹899 inclusive of all taxes</p>           
+                                  <a href="Buynow.html" class="btn btn-success" target="_blank">Buy Now</a> <button class="btn btn-warning">Add to Cart</button> </div>
+                                  <br><br>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>    </td>
+                              </tr>
+                            </table>
+                           
+                              </div>
+        </div>
+    </div>
+      
+</body>
+</html>
